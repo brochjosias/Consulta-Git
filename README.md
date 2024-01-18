@@ -6,7 +6,7 @@ Visão Geral: O sistema oferece uma variedade de recursos, permite a administra�
 
 Funcionalidades: Pesquisar e ver Perfis. Selecionar linguagens dos projetos e limpar.
 
-Tecnologias Utilizadas: Linguagens de Programação: Node.js, JavaScript; Frameworks: React; Banco de Dados: json-server; Outras Tecnologias: PropTypes, axios.
+Tecnologias Utilizadas: Linguagens de Programação: JavaScript, HTML e CSS; Frameworks: React; Banco de Dados: json-server; Outras Tecnologias: PropTypes, axios.
 
 Configuração do Ambiente de Desenvolvimento, siga estas etapas:
 
