@@ -19,9 +19,7 @@ Frameworks: _React_
 Banco de Dados: _json-server_
 Outras Tecnologias: _PropTypes_, _axios_
 
-## Configuração do Ambiente de Desenvolvimento
-
-Faça o download do repositório e em seu ambiente de desenvolvimento:
+## Faça o download do repositório e em seu ambiente de desenvolvimento:
 
 **BACK-END:**
 
