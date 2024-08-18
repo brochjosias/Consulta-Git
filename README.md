@@ -17,7 +17,7 @@ Limpar
 - JavaScript
 - HTML
 - CSS
-- React\_
+- React
 
 ## Faça o download do repositório e em seu ambiente de desenvolvimento:
 
