@@ -14,10 +14,10 @@ Limpar
 
 ## Tecnologias Utilizadas
 
-Linguagens de Programação: _JavaScript_, _HTML_, _CSS_
-Frameworks: _React_
-Banco de Dados: _json-server_
-Outras Tecnologias: _PropTypes_, _axios_
+- JavaScript
+- HTML
+- CSS
+- React\_
 
 ## Faça o download do repositório e em seu ambiente de desenvolvimento:
 
