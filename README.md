@@ -2,26 +2,55 @@
 
 Bem-vindo ao Consulta-Git! Este é um sistema de gerenciamento de perfis do GitHub que organiza de forma eficiente as informações mais importantes de cada perfil e seus projetos.
 
-Visão Geral: O sistema oferece uma variedade de recursos, permite a administração precisa dos dados associados aos perfis e projetos, facilitando a realização de operações fundamentais para uma gestão eficaz.
+## Visão Geral
 
-Funcionalidades: Pesquisar e ver Perfis. Selecionar linguagens dos projetos e limpar.
+O sistema oferece uma variedade de recursos, permitindo a administração precisa dos dados associados aos perfis e projetos, facilitando a realização de operações fundamentais para uma gestão eficaz.
 
-Tecnologias Utilizadas: Linguagens de Programação: JavaScript, HTML e CSS; Frameworks: React; Banco de Dados: json-server; Outras Tecnologias: PropTypes, axios.
+## Funcionalidades
 
-Configuração do Ambiente de Desenvolvimento, siga estas etapas:
+Pesquisar e ver Perfis
+Selecionar linguagens dos projetos
+Limpar
 
-Faça o download do repositório;
+## Tecnologias Utilizadas
 
-Em seu ambiente de desenvolvimento:
+Linguagens de Programação: _JavaScript_, _HTML_, _CSS_
+Frameworks: _React_
+Banco de Dados: _json-server_
+Outras Tecnologias: _PropTypes_, _axios_
 
---BACK-END: cd api-github;
+## Configuração do Ambiente de Desenvolvimento
 
-Instale as Dependências: npm install;
+Faça o download do repositório e em seu ambiente de desenvolvimento:
 
-Inicie o Back-end: npm run json-server.
+**BACK-END:**
 
---FRONT-END: cd api-github;
+```bash
+cd api-github
+```
 
-Inicie o Front-end: npm start;
+Instale as Dependências:
 
-Assim q carregar aparecerá o sistema seu navegador padrão.
+```bash
+npm install
+```
+
+Inicie o Back-end:
+
+```bash
+npm run json-server
+```
+
+**FRONT-END:**
+
+```bash
+cd api-github
+```
+
+Inicie o Front-end:
+
+```bash
+npm start
+```
+
+Assim que carregar, o sistema será exibido no seu navegador padrão.
