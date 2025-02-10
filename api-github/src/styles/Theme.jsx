@@ -1,14 +1,13 @@
 import PropTypes from "prop-types";
 import React from "react";
-
 import { ThemeProvider } from "styled-components";
 
 export const theme = {
   colors: {
     white: "#FFFFFF",
     black: "#0C0D0F",
-    turquese: '#1abc9c',
-    turqueseDark: '#16a085',
+    turquese: "#1abc9c",
+    turqueseDark: "#16a085",
     red: "#E03131",
     orange: "#E8590C",
     yellow: "#FCC419",
@@ -28,40 +27,37 @@ export const theme = {
     gray700: "#424449",
     gray800: "#1D1E21",
     gray900: "#141518",
-    primary: "#F83600",
-    secondary: "#FE8C00",
-    champagne: '#ecf0f1',
-    champagneDark: '#bdc3c7',
-    metal: '#95a5a6',
-    metalDark: '#7f8c8d',
-    asphalt: '#34495e',
-    asphaltDark: '#2c3e50',
-    carbon: '#555459',
-    carbonDark: '#3b3a3e',
-
-
-
+    primary: "#F83600", // Cor primária (laranja vibrante)
+    secondary: "#FE8C00", // Cor secundária (laranja mais claro)
+    champagne: "#ecf0f1",
+    champagneDark: "#bdc3c7",
+    metal: "#95a5a6",
+    metalDark: "#7f8c8d",
+    asphalt: "#34495e",
+    asphaltDark: "#2c3e50",
+    carbon: "#555459",
+    carbonDark: "#3b3a3e",
   },
-  fonts: ['Open Sans', 'Arial', 'Helvetica', 'sans-serif'].join(','),
+  fonts: ["Open Sans", "Arial", "Helvetica", "sans-serif"].join(","),
   fontFamily: {
     heading: ["IBM Plex Sans", "sans-serif"].join(","),
     sans: ["Open Sans", "Arial", "Helvetica", "sans-serif"].join(","),
     mono: ["IBM Plex Mono", "serif"].join(","),
   },
   fontSizes: {
-    small: '.8rem',
-    normal: '1rem',
-    large: '1.2rem',
-    title: '1.3rem',
-    subtitle: '1.25rem',
+    small: ".8rem",
+    normal: "1rem",
+    large: "1.2rem",
+    title: "1.3rem",
+    subtitle: "1.25rem",
   },
   breakpoints: {
-    xs: '0',
-    sm: '576px',
-    md: '768px',
-    lg: '992px',
-    xl: '1200px',
-    xxl: '1400px',
+    xs: "0",
+    sm: "576px",
+    md: "768px",
+    lg: "992px",
+    xl: "1200px",
+    xxl: "1400px",
   },
 };
 

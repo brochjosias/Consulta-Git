@@ -6,7 +6,9 @@ export const GlobalStyle = createGlobalStyle`
   }
   body {
     background: ${(props) => props.theme.colors.gray900};
-    color: ${(props) => props.theme.colors.gray600};
+    color: ${(props) =>
+      props.theme.colors
+        .gray200}; /* Alterado para um cinza mais claro para melhor contraste */
     font-family: ${(props) => props.theme.fontFamily.sans};
     padding: 1rem;
   }
@@ -15,5 +17,13 @@ export const GlobalStyle = createGlobalStyle`
     font-family: ${(props) => props.theme.fontFamily.heading};
     font-weight: bold;
     color: ${(props) => props.theme.colors.white};
+  }
+
+  a {
+    color: ${(props) => props.theme.colors.primary};
+    text-decoration: none;
+    &:hover {
+      color: ${(props) => props.theme.colors.secondary};
+    }
   }
 `;
