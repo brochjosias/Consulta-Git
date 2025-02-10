@@ -1,42 +1,89 @@
 /* eslint-disable react/jsx-filename-extension */
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
+import { useNavigate } from "react-router-dom"; // Importe o useNavigate
+import {
+  MdGroup,
+  MdLocationCity,
+  MdWork,
+  MdLink,
+  MdClose,
+} from "react-icons/md"; // Importe o ícone de "X"
 
-import { MdGroup, MdLocationCity, MdWork, MdLink } from 'react-icons/md';
-
-import { Container, Header, Avatar, Login, Name, Inner, Data } from './styles';
+import { Container, Header, Avatar, Login, Name, Inner, Data } from "./styles";
 
 function Profile({ user }) {
-  return <Container>
-    <Header>
-      <Avatar src={user.avatar_url} />
-      <Login>{user.login}</Login>
-      <Name>{user.name}</Name>
-    </Header>
-    <Inner>
-      <Data>
-        <MdGroup size={20} />
-        {user.following}&nbsp;<i>seguidores</i>&nbsp;&middot;&nbsp;
-        {user.followers}&nbsp;<i>seguindo</i>
-      </Data>
-      {user.company && (
+  const navigate = useNavigate(); // Hook para navegação
+
+  // Função para voltar à página principal
+  const handleBackToSearch = () => {
+    navigate("/"); // Redireciona para a rota principal
+  };
+
+  // Função para mudar a cor ao passar o mouse
+  const handleMouseEnter = (e) => {
+    e.currentTarget.style.color = "#ff0000"; // Cor ao passar o mouse
+  };
+
+  // Função para voltar à cor original ao sair do mouse
+  const handleMouseLeave = (e) => {
+    e.currentTarget.style.color = "#fff"; // Volta à cor original
+  };
+
+  return (
+    <Container>
+      {/* Botão de "X" no canto superior direito */}
+      <button
+        type="button" // Adicione o tipo explícito
+        onClick={handleBackToSearch}
+        aria-label="Fechar e voltar à página de pesquisa" // Rótulo para acessibilidade
+        style={{
+          position: "absolute",
+          top: "1rem",
+          right: "1rem",
+          background: "transparent",
+          border: "none",
+          cursor: "pointer",
+          fontSize: "24px",
+          color: "#fff",
+          transition: "color 0.3s",
+        }}
+        onMouseEnter={handleMouseEnter} // Função para o evento onMouseEnter
+        onMouseLeave={handleMouseLeave} // Função para o evento onMouseLeave
+      >
+        <MdClose />
+      </button>
+
+      <Header>
+        <Avatar src={user.avatar_url} />
+        <Login>{user.login}</Login>
+        <Name>{user.name}</Name>
+      </Header>
+      <Inner>
         <Data>
-          <MdWork size={20} /> {user.company}
+          <MdGroup size={20} />
+          {user.following}&nbsp;<i>seguidores</i>&nbsp;&middot;&nbsp;
+          {user.followers}&nbsp;<i>seguindo</i>
         </Data>
-      )}
-      {user.location && (
-        <Data>
-          <MdLocationCity size={20} /> {user.location}
-        </Data>
-      )}
-      {user.blog && (
-        <Data>
-          <MdLink size={20} />
-          <a href={`\\${user.blog}`}>{user.blog}</a>
-        </Data>
-      )}
-    </Inner>
-  </Container>
+        {user.company && (
+          <Data>
+            <MdWork size={20} /> {user.company}
+          </Data>
+        )}
+        {user.location && (
+          <Data>
+            <MdLocationCity size={20} /> {user.location}
+          </Data>
+        )}
+        {user.blog && (
+          <Data>
+            <MdLink size={20} />
+            <a href={`\\${user.blog}`}>{user.blog}</a>
+          </Data>
+        )}
+      </Inner>
+    </Container>
+  );
 }
 
 Profile.propTypes = {
