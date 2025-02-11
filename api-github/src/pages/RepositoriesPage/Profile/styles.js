@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  position: relative; /* Permite posicionamento absoluto dos filhos */
   padding: 1rem;
-  background: ${(props) =>
-    props.theme.colors.gray800}; /* Fundo escuro para contraste */
-  border-radius: 8px; /* Bordas arredondadas */
-  margin: 1rem 0; /* Margem para separar de outros componentes */
+  background: ${(props) => props.theme.colors.gray800};
+  border-radius: 8px;
+  margin: 1rem 0;
+  overflow: visible; /* Garante que o conteúdo não seja cortado */
 `;
 
 export const Header = styled.div`
