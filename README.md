@@ -8,9 +8,10 @@ O sistema oferece uma variedade de recursos, permitindo a administração precis
 
 ## Funcionalidades
 
-Pesquisar e ver Perfis
-Selecionar linguagens dos projetos
-Limpar
+- Pesquisar e ver Perfis
+- Selecionar linguagens dos projetos
+- Limpar
+- Voltar pro início
 
 ## Tecnologias Utilizadas
 
