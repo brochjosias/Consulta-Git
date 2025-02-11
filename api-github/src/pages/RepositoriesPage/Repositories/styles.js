@@ -7,14 +7,11 @@ export const Container = styled.div`
   margin-top: 2rem;
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.lg}) {
-    grid-template-columns: repeat(
-      2,
-      minmax(0, 1fr)
-    ); /* 2 colunas em telas médias */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.sm}) {
-    grid-template-columns: 1fr; /* 1 coluna em telas pequenas */
-    gap: 1rem; /* Reduzi o gap para telas pequenas */
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 `;

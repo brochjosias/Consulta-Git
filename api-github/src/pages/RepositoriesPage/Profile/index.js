@@ -1,42 +1,38 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import PropTypes from "prop-types";
-import { useNavigate } from "react-router-dom"; // Importe o useNavigate
+import { useNavigate } from "react-router-dom";
 import {
   MdGroup,
   MdLocationCity,
   MdWork,
   MdLink,
   MdClose,
-} from "react-icons/md"; // Importe o ícone de "X"
+} from "react-icons/md";
 
 import { Container, Header, Avatar, Login, Name, Inner, Data } from "./styles";
 
 function Profile({ user }) {
-  const navigate = useNavigate(); // Hook para navegação
+  const navigate = useNavigate();
 
-  // Função para voltar à página principal
   const handleBackToSearch = () => {
-    navigate("/"); // Redireciona para a rota principal
+    navigate("/");
   };
 
-  // Função para mudar a cor ao passar o mouse
   const handleMouseEnter = (e) => {
-    e.currentTarget.style.color = "#ff0000"; // Cor ao passar o mouse
+    e.currentTarget.style.color = "#ff0000";
   };
 
-  // Função para voltar à cor original ao sair do mouse
   const handleMouseLeave = (e) => {
-    e.currentTarget.style.color = "#fff"; // Volta à cor original
+    e.currentTarget.style.color = "#fff";
   };
 
   return (
     <Container>
-      {/* Botão de "X" no canto superior direito */}
       <button
-        type="button" // Adicione o tipo explícito
+        type="button"
         onClick={handleBackToSearch}
-        aria-label="Fechar e voltar à página de pesquisa" // Rótulo para acessibilidade
+        aria-label="Fechar e voltar à página de pesquisa"
         style={{
           position: "absolute",
           top: "1rem",
@@ -48,8 +44,8 @@ function Profile({ user }) {
           color: "#fff",
           transition: "color 0.3s",
         }}
-        onMouseEnter={handleMouseEnter} // Função para o evento onMouseEnter
-        onMouseLeave={handleMouseLeave} // Função para o evento onMouseLeave
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
       >
         <MdClose />
       </button>

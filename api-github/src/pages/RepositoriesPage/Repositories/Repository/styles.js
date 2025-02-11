@@ -35,9 +35,7 @@ export const Footer = styled.footer`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: ${(props) =>
-    props.color ||
-    props.theme.colors.gray400}; /* Cor mais suave para o footer */
+  color: ${(props) => props.color || props.theme.colors.gray400};
   font-size: ${(props) => props.theme.fontSizes.small};
 `;
 
@@ -46,15 +44,13 @@ export const Lang = styled.span`
 `;
 
 export const Link = styled.a`
-  color: ${(props) =>
-    props.color ||
-    props.theme.colors.primary}; /* Cor primária ou personalizada */
+  color: ${(props) => props.color || props.theme.colors.primary};
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
   transition: opacity 0.3s;
 
   &:hover {
-    opacity: 0.8; /* Efeito de opacidade ao passar o mouse */
+    opacity: 0.8;
   }
 `;

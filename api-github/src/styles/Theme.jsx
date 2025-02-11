@@ -27,8 +27,8 @@ export const theme = {
     gray700: "#424449",
     gray800: "#1D1E21",
     gray900: "#141518",
-    primary: "#F83600", // Cor primária (laranja vibrante)
-    secondary: "#FE8C00", // Cor secundária (laranja mais claro)
+    primary: "#F83600",
+    secondary: "#FE8C00",
     champagne: "#ecf0f1",
     champagneDark: "#bdc3c7",
     metal: "#95a5a6",
