@@ -2,11 +2,7 @@
 
 Bem-vindo ao Consulta-Git! Este é um sistema de gerenciamento de perfis do GitHub que organiza de forma eficiente as informações mais importantes de cada perfil e seus projetos.
 
-<p align="center">
-  <video width="500" controls>
-    <source src="https://www.linkedin.com/posts/josiasbroch_github-desenvolvimento-react-activity-7295099052847775744-WRWj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADlRdAMBKY74vEDZtFxqewys63zNrB0PecY" type="video/mp4">
-  </video>
-</p>
+[Video de apresentação](https://www.linkedin.com/posts/josiasbroch_github-desenvolvimento-react-activity-7295099052847775744-WRWj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADlRdAMBKY74vEDZtFxqewys63zNrB0PecY)
 
 ## Visão Geral
 
